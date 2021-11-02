@@ -44,9 +44,9 @@ t5 = "Charlie sends 0.2 GC to David"
 t6 = "David sends 0.1 GC to Eric"
 
 myblockchain = Blockchain()
+
 myblockchain.create_block_from_transaction([t1, t2])
-myblockchain.display_chain()
 myblockchain.create_block_from_transaction([t3, t4])
-myblockchain.display_chain()
 myblockchain.create_block_from_transaction([t5, t6])
+
 myblockchain.display_chain()
