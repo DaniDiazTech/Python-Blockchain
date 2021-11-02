@@ -28,10 +28,9 @@ class Blockchain:
         self.chain.append(GeekCoinBlock(previous_block_hash, transaction_list))
 
     def display_chain(self):
-        for i in len(self.chain):
+        for i in range(len(self.chain)):
             print(f"Data {i + 1}: {self.chain[i].block_data}")
-            print(f"Hash {i + 1}: {self.chain[i].block_hash}")
-            print("\n")
+            print(f"Hash {i + 1}: {self.chain[i].block_hash}\n")
 
     @property
     def last_block(self):
